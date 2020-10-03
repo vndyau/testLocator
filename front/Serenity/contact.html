@@ -43,7 +43,9 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex">
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html">Serenity</a></h1>
+        <h1 class="text-light">
+          <a href="index.html">testLocator by slackOverflow</a>
+        </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -52,10 +54,11 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About COVID-19</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Testing Locations</a></li>
           <!--li><a href="services.html">Services</a></li-->
           <li><a href="portfolio.html">Resources</a></li>
-          <li class="get-started"><a href="#get-started">Get Started</a></li>
+          <li class="get-started"><a
+              href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf">Feeling Sick?</a></li>
         </ul>
       </nav>
       <!-- .nav-menu -->
@@ -69,12 +72,10 @@
       <div class="breadcrumb-hero">
         <div class="container">
           <div class="breadcrumb-hero">
-            <h2>Contact</h2>
+            <h2>COVID-19 Testing Site Locations</h2>
             <p>
-              Est dolorum ut non facere possimus quibusdam eligendi
-              voluptatem. Quia id aut similique quia voluptas sit quaerat
-              debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo
-              harum praesentium.
+              Enter your address and find the nearest testing sites near to
+              you.
             </p>
           </div>
         </div>
@@ -92,71 +93,70 @@
     <section id="contact" class="contact">
       <div class="container">
         <div>
+          <iframe style="border: 0; width: 100%; height: 500px"
+            src="https://giscorps.maps.arcgis.com/apps/webappviewer/index.html?id=2ec47819f57c40598a4eaf45bf9e0d16&extent=-8675145.515%2C5244853.2502%2C-8555750.8768%2C5311429.9018%2C102100"
+            frameborder="0" allowfullscreen></iframe>
         </div>
-        <iframe style="border: 0; width: 100%; height: 270px"
-          src="https://giscorps.maps.arcgis.com/apps/webappviewer/index.html?id=2ec47819f57c40598a4eaf45bf9e0d16&extent=-8675145.515%2C5244853.2502%2C-8555750.8768%2C5311429.9018%2C102100"
-          frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-4" data-aos="fade-right">
-          <div class="info">
-            <div class="address">
-              <i class="icofont-google-map"></i>
-              <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
+        <div class="row mt-5">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
 
-            <div class="email">
-              <i class="icofont-envelope"></i>
-              <h4>Email:</h4>
-              <p>info@example.com</p>
-            </div>
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
 
-            <div class="phone">
-              <i class="icofont-phone"></i>
-              <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="form-row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
-              <div class="col-md-6 form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required"
-                data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validate"></div>
-            </div>
-            <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Your message has been sent. Thank you!
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
               </div>
-            </div>
-            <div class="text-center">
-              <button type="submit">Send Message</button>
-            </div>
-          </form>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
       </div>
     </section>
     <!-- End Contact Section -->
